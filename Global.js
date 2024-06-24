@@ -50,7 +50,7 @@ let signupUsers = JSON.parse(localStorage.getItem("users"));
 let loggedInUsers = JSON.parse(localStorage.getItem("logged-in-users"));
 if (signupUsers && loggedInUsers) {
     let profile = document.querySelector("#left #profile");
-    let avatarPic = "/images/no image avatar.jpg";
+    let avatarPic = "../images/no image avatar.jpg";
     let username = document.getElementById("username")
     let logOutLink = document.getElementById("logout-link");
     let loginLink = document.getElementById("login-link");
@@ -96,9 +96,9 @@ if (signupUsers && loggedInUsers) {
 
 // onclick function on logo image for go to home for whole website
 window.goToHome = () => {
-    window.location.href = "/Home/index.html";
+    window.location.href = "./index.html";
 }
 window.goToCart = () => {
-    window.location.href = "/Cart Page/cart-page.html";
+    window.location.href = "./Cart Page/cart-page.html";
 }
 

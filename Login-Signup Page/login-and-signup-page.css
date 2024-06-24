@@ -22,7 +22,7 @@ main {
 #image {
     height: 400px;
     width: 60%;
-    background: url(/images/login\ and\ signup\ page\ pic.jpg);
+    background: url(../images/login\ and\ signup\ page\ pic.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;

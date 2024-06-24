@@ -8,11 +8,11 @@ checkOut_btn.onclick = function (e) {
     e.preventDefault()
     let loggedIn = JSON.parse(localStorage.getItem("logged-in-users"));
     if (loggedIn) {
-        window.location.href = "/Billing Page/billing.html";
+        window.location.href = "../Billing Page/billing.html";
     }
     else {
-        sessionStorage.setItem("goback-url", "/Cart Page/cart-page.html");
-        window.location.href = "/Login-Signup Page/login-page.html";
+        sessionStorage.setItem("goback-url", "../Cart Page/cart-page.html");
+        window.location.href = "../Login-Signup Page/login-page.html";
     }
 }
 
@@ -89,3 +89,9 @@ function removeProduct(productId) {
 
 displayCartProducts();
 
+window.goToHome = () => {
+    window.location.href = "../index.html";
+}
+window.goToCart = () => {
+    window.location.href = "../Cart Page/cart-page.html";
+}

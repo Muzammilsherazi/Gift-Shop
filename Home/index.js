@@ -1,5 +1,5 @@
-
-import { Data } from "productData.js";
+import { Data } from "../productData.js";
+// import { Data } from "/productData.js";
 
 let productData = Data;
 
@@ -66,9 +66,6 @@ window.addCart = (id) => {
 
     localStorage.setItem("cart products", JSON.stringify(cartProductData));
 }
-
-
-
 
 
 

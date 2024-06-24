@@ -33,3 +33,9 @@ window.forCompare = (id_1 , id_2) => {
     anchorTag.href = "/Compare Page/compare-page.html?id=" + id_1 +  "&id2=" + id_2;
     anchorTag.click();
 }
+window.goToHome = () => {
+    window.location.href = "../index.html";
+}
+window.goToCart = () => {
+    window.location.href = "../Cart Page/cart-page.html";
+}

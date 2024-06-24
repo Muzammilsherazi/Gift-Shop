@@ -102,3 +102,10 @@ function OK(){
     document.getElementById("order-placed").style.display = "none"
     window.location.href = "/Home/index.html";
 }
+
+window.goToHome = () => {
+    window.location.href = "../index.html";
+}
+window.goToCart = () => {
+    window.location.href = "../Cart Page/cart-page.html";
+}

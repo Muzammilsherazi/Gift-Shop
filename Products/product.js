@@ -1,6 +1,6 @@
-import { Data } from "/productData.js";
-import { category } from "/productData.js";
-import { brand } from "/productData.js";
+import { Data } from "../productData.js";
+import { category } from "../productData.js";
+import { brand } from "../productData.js";
 
 // get elements 
 let productData = Data;
@@ -93,4 +93,10 @@ window.redirect = (id) => {
     let anchortag = document.createElement("a");
     anchortag.href = "/Single Product Details/product-detail.html?id=" + id;
     anchortag.click();
+}
+window.goToHome = () => {
+    window.location.href = "../index.html";
+}
+window.goToCart = () => {
+    window.location.href = "../Cart Page/cart-page.html";
 }

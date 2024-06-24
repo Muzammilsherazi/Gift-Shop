@@ -1,4 +1,4 @@
-import { Data } from '/productData.js'
+import { Data } from '../productData.js'
  
 // variables
 let getProductsData = Data; //get products data
@@ -40,3 +40,11 @@ function displayCompareProducts() {
 
 }
 displayCompareProducts();
+
+
+window.goToHome = () => {
+    window.location.href = "../index.html";
+}
+window.goToCart = () => {
+    window.location.href = "../Cart Page/cart-page.html";
+}

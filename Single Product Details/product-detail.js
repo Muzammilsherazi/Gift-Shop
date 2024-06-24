@@ -1,4 +1,4 @@
-import { Data } from '/productData.js';
+import { Data } from '../productData.js';
 
 let allproductsData = Data;
 
@@ -95,4 +95,11 @@ window.addCart = (id) => {
     }
 
     localStorage.setItem("cart products", JSON.stringify(cartProductData));
+}
+
+window.goToHome = () => {
+    window.location.href = "../index.html";
+}
+window.goToCart = () => {
+    window.location.href = "../Cart Page/cart-page.html";
 }

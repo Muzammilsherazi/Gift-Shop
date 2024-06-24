@@ -5,7 +5,7 @@
 
 #banner-image{
     height: 400px;
-    background-image: url(/images/Contact\ Us.jpg);
+    background-image: url(../images/Contact\ Us.jpg);
     background-position: center;
     background-size: cover;
     display: flex;

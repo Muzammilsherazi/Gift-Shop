@@ -81,7 +81,7 @@ function signup() {
             window.location.href = gobackUrl;
         }
         else{
-            window.location.href = "/Home/index.html";
+            window.location.href = "../index.html";
         }
     }
 }

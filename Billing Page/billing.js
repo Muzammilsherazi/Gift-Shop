@@ -166,3 +166,10 @@ function number(event){
     let getNumber = event.keyCode;
     return ((getNumber >= 48 && getNumber <= 57))
 }
+
+window.goToHome = () => {
+    window.location.href = "../index.html";
+}
+window.goToCart = () => {
+    window.location.href = "../Cart Page/cart-page.html";
+}

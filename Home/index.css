@@ -9,7 +9,7 @@
 /* hero-section */
 
 #hero-section {
-    background-image: url(images/banner\ image.png);
+    background-image: url(../images/banner\ image.png);
     background-position: center;
     background-size: cover;
     height: 550px;
@@ -246,37 +246,37 @@ section {
 }
 
 #top-products #img-one {
-    background-image: url(/images/Riblor-Carlo-Cufflinks.webp);
+    background-image: url(../images/Riblor-Carlo-Cufflinks.webp);
     background-position: center;
     background-size: cover;
 }
 
 #top-products #img-two {
-    background-image: url(/images/bracelet.jpg);
+    background-image: url(../images/bracelet.jpg);
     background-position: center;
     background-size: cover;
 }
 
 #top-products #img-three {
-    background-image: url(/images/watch.jpg);
+    background-image: url(../images/watch.jpg);
     background-position: center;
     background-size: cover;
 }
 
 #top-products #img-four {
-    background-image: url(/images/gucci\ wallet.avif);
+    background-image: url(../images/gucci\ wallet.avif);
     background-position: center;
     background-size: cover;
 }
 
 #top-products #img-five {
-    background-image: url(/images/friendship\ card.jpg);
+    background-image: url(../images/friendship\ card.jpg);
     background-position: center;
     background-size: cover;
 }
 
 #top-products #img-six {
-    background-image: url(/images/gucci\ horsebit\ handbag.avif);
+    background-image: url(../images/gucci\ horsebit\ handbag.avif);
     background-position: center;
     background-size: cover;
 }
