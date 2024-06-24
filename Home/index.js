@@ -1,5 +1,5 @@
 
-import { Data } from "/productData.js";
+import { Data } from "productData.js";
 
 let productData = Data;
 
