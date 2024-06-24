@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale= 2.0">
+    <title>Cart Page | Gift Shop</title>
+    <!-- global css -->
+    <link rel="stylesheet" href="/Global.css">
+    <!-- css file link -->
+    <link rel="icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/Cart Page/cart-page.css">
+
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- macondo fonts link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Caveat Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Macondo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Poppins font link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Macondo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Ubuntu font link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Macondo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="logout-msg">
+        <p>Are You Sure?</p>
+        <div id="btns">
+            <button id="no-btn">No</button>
+            <button id="yes-btn">Yes</button>
+        </div>
+    </div>
+
+    <nav>
+        <div id="left">
+            <img src="/images/logo.png" alt="" onclick="goToHome()">
+            <div id="user">
+                <img src="/images/no image avatar.jpg" alt="profile-pic" id="profile">
+                <p id="username">Unknown</p>
+            </div>  
+        </div>
+        <ul>
+            <li><a href="/Home/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/Products/product.html"><i class="fa-solid fa-store"></i> Products</a></li>
+            <li><a href="/About us/about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="/Contact us/contact-us.html"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+        </ul>
+        <div id="right-corner">
+            <a href="/Login-Signup Page/login-page.html" id="login-link">Login</a> 
+            <a href="#" id="logout-link">Logout </a>
+            <a href="/Login-Signup Page/signup-page.html" id="signup-link">Signup</a>
+            <i class="fa fa-shopping-cart" aria-hidden="true" id="cartIcon" onclick="goToCart()">
+                <p>0</p>
+            </i>
+        </div>
+        <div id="menu" onclick="window.Showsidebar()">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+    </nav>
+
+    <div id="shade"></div>
+
+    <div id="sideNavbar">
+        <div id="close" onclick="window.Hidesidebar()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+            <li><a href="/Home/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="/Products/product.html"><i class="fa-solid fa-store"></i>Products</a></li>
+            <li><a href="/About us/about.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+            <li><a href="/Contact us/contact-us.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <h1>Shopping Cart Summary</h1>
+        <div id="top">
+            <div class="btns">
+                <a href="/Products/product.html"><button class="first"><i class="fa fa-long-arrow-left"
+                            aria-hidden="true"></i> &nbsp;Continue Shopping</button></a>
+                <a href=""><button class="secondBtn" id="checkout-btn">Check Out</button></a>
+            </div>
+            <div class="total-price">
+                <p>Total Price:</p>
+                <span></span>
+            </div>
+        </div>
+        <div id="cartProducts">
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <div id="top">
+            <div class="first">
+                <h5>Products</h5>
+                <p>mugs</p>
+                <p>bracelets</p>
+                <p>watches</p>
+                <p>wallets</p>
+                <a href="/Products/product.html">show all +</a>
+            </div>
+            <div class="second">
+                <h5>brands</h5>
+                <p>hallmark (for cards & mugs)</p>
+                <p>riblor (for wallets, bracelets & cufflinks)</p>
+                <p>gucci (for handbags, wallets, fragrances & watches)</p>
+                <a href="/Products/product.html">show all +</a>
+            </div>
+            <div class="third">
+                <h5>Pages</h5>
+                <a href="/Home/index.html">Home</a>
+                <a href="/Products/product.html">Products</a>
+                <a href="/About us/about.html">About Us</a>
+                <a href="/Contact us/contact-us.html">Contact Us</a>
+            </div>
+            <div class="fourth">
+                <div class="icons">
+                    <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                            class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div class="text">
+                    <p>Terms And Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="number">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>+921000000000</p>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>xyz@gmail.com</p>
+                </div>
+                <div class="location">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <p>Pakistan, Karachi..</p>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <h5>© Copyright 2024 - All Rights Reserved.</h5>
+        </div>
+    </footer>
+
+    <script src="/Global.js"></script>
+    <script src="/Cart Page/cart-page.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

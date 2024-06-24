@@ -1,0 +1,99 @@
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 40px;
+}
+section h1{
+    font-family: var(--poppins);
+    color: #4f5050;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+}
+
+
+#products .products {
+    padding: 4px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 230px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 0px 15px rgb(150, 150, 150);
+    transition: 0.2s;
+}
+#products .products:hover{
+    scale: 1.1;
+}
+
+#products .products .brand{
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    background-color: #2a3439;
+    padding: 3px 10px;
+    font-size: 0.7em;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 0px 2px rgb(27, 27, 27);
+    color: #F0F8FF;
+    font-family: var(--macondo);    
+}
+
+#products .products img{
+    border: 1px solid rgb(214, 212, 212);
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#products .products .name-and-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--poppins);
+}
+#products .products .name-and-price h4{
+    color: #960018;
+    text-transform: capitalize;
+    font-size: 0.8em;
+}
+#products .products .name-and-price h5{
+    color: #2a3439;
+    font-size: 0.7em;
+}
+#products .products .description p{
+    font-family: var(--poppins);
+    font-size: 0.7em;
+    color: #2a3439;
+    font-weight: 600;
+}
+
+#products .products .rating{
+    font-size: 0.7em;
+    color: rgb(236, 201, 2);
+}
+
+#products .products #btns{
+    display: flex;
+    justify-content: space-between;
+
+}
+#products .products #add-to-cart{
+    padding: 3px;
+    width: 100px;
+    font-size: 0.7em;
+    background-color: transparent;
+    border: 1px solid #960018;
+    border-radius: 5px;
+    color: #0f0f0f;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}

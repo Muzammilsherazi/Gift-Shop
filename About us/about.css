@@ -1,0 +1,111 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+}
+
+section #about{
+    display:  flex;
+    justify-content: center;
+    gap: 80px;
+}
+section #about .left{
+    position: relative;
+}
+section #about .border{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: rotate(-3deg);
+    width: 320px;
+    height: 400px;
+    border: 2px solid #960019af;
+    border-bottom-right-radius: 150px;
+}
+section #about img{
+    transform: rotate(3deg);
+    z-index: 3;
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border-bottom-right-radius: 170px;
+}
+section #about .content{
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section .content h1{
+    border-bottom: 1px dashed;
+    font-family: var(--poppins);
+    color: #960018;
+    font-size: 2em;
+}
+section .content h3{
+    font-family: var(--caveat);
+    color: #161718;
+    font-size: 1.5em;
+}
+section .content p{
+    font-family: var(--poppins);
+    color: #161718;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+section .content .line{
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    color: #960018;
+    margin-top: 20px;
+}
+
+
+/* media queries for responsiveness */
+
+/* for 1024px */
+@media screen and (max-width: 1024px) {
+    section #about{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    section #about .content{
+        text-align: center;
+        width: 50em;
+    }   
+}
+
+/* for 960px */
+@media screen and (max-width: 960px) {
+    section #about .content{
+        text-align: center;
+        width: 30em;
+    }   
+}
+
+/* for 768px */
+@media screen and (max-width: 768px) {
+    section #about img{
+        width: 270px;
+        height: 300px;
+        border-bottom-right-radius: 120px;
+    }
+    section #about .border{
+        width: 270px;
+        height: 310px;
+        border-bottom-right-radius: 110px;
+    }
+    
+    section #about .content{
+        width: 25em;
+    }   
+    section #about .content h1{
+        font-size: 1.6em;
+    }
+    section #about .content p{
+        font-size: 0.7em;
+    }
+}
