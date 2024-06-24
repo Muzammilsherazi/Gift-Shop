@@ -7,7 +7,7 @@ window.onload = function () {
 const activePage = window.location.href;
 let navLinks = document.querySelectorAll('nav a');
 
-if (activePage == "https://gift-shop-online.web.app/") {
+if (activePage == "/") {
     navLinks[0].classList.add("active");
 }
 navLinks.forEach(links => {
