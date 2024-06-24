@@ -7,7 +7,7 @@ window.onload = function () {
 const activePage = window.location.href;
 let navLinks = document.querySelectorAll('nav a');
 
-if (activePage == "/") {
+if (activePage == "https://muzammilsherazi.github.io/Gift-Shop/") {
     navLinks[0].classList.add("active");
 }
 navLinks.forEach(links => {
